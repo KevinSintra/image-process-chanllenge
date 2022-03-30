@@ -1,28 +1,8 @@
-
-class ImageUtilInterface {
-    // 模仿介面
-    constructor() {
-        if(!this.getImage) {
-            throw new Error("not implement getImage");
-        }
-
-        if(!this.flipImage) {
-            throw new Error("not implement flipImage");
-        }
-
-        if(!this.saveImage) {
-            throw new Error("not implement saveImage");
-        }        
-    }
-
-}
-
 const  Jimp = require('jimp');
 
-class ImageJimpUtil extends ImageUtilInterface {
+class ImageJimpUtil {
     constructor() {
-        super();
-
+        
         // Jimp 設定 maxMemoryUsageInMB 為 1024 MB
         let cachedJpegDecoder = Jimp.decoders['image/jpeg'];
         Jimp.decoders['image/jpeg'] = (data) => {

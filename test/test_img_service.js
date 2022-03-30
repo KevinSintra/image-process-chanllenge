@@ -5,7 +5,7 @@ let ImageService = imgService.ImageService;
 
 describe('unit testing hook', function() {
 
-    it('ImageService 使用 ImageJimpUtil 翻轉圖片應該需要這些流程', async() => {
+    it('ImageService 使用 ImageJimpUtil 翻轉圖片要走這些流程', async() => {
         let obj = new imageUtil.ImageJimpUtil();
         let getImage = sinon.stub(obj, 'getImage');
         let flipImage = sinon.stub(obj, 'flipImage');
@@ -24,7 +24,7 @@ describe('unit testing hook', function() {
 
 describe('integration testing hook', function() {
 
-    it('ImageService 使用 ImageJimpUtil 翻轉圖片應該需要這些流程', async() => {
+    it('ImageService 使用 ImageJimpUtil 翻轉圖片要走這些流程', async() => {
         let obj = new imageUtil.ImageJimpUtil();
         let getImage = sinon.spy(obj, 'getImage');
         let flipImage = sinon.spy(obj, 'flipImage');
