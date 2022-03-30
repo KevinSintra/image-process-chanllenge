@@ -1,0 +1,19 @@
+{
+  "name": "img_process_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --timeout 5000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.16.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2",
+    "sinon": "^13.0.1"
+  }
+}
